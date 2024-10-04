@@ -5,68 +5,58 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- /Google fonts-->
   </head>
 
   <body>
-    <div class="interface">
+             
+         <header>
+            <div class="interface">
+                <section class="logo">
+                    <img src="imagens/logo1.png" alt="Logotipo do Site">
+                </section>
+
+                <section class="menu-desktop">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sobre o Salão</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Galeria e Depoimentos</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="btn-contato">
+                    <a href="#">
+                        <button>Agendar</Button>
+                    </a>
+                </section>
+            </div>
+
+        </header>
+
         <section class="quem-somos">
-            <div class="container text-center text-white">
-                <h2>Quem Somos</h2>
-                <p>Somos um salão de beleza dedicado a oferecer os melhores serviços para nossos clientes, sempre com atenção aos detalhes e às necessidades individuais de cada um.</p>
-            </div>
-        </section>
-        <section class="page2">
-            <h2 class="text-center">Serviços</h2>
-        <div class="row mt-4">
-            <div class="col-md-4 text-center">
-                <h4>Corte</h4>
-                <p>Profissionais especializados para oferecer cortes modernos e clássicos.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>Coloração</h4>
-                <p>Transforme seu visual com as melhores técnicas e produtos para coloração.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>Progressiva Orgânica Sem Formol</h4>
-                <p>Alisamento saudável, sem agredir seus fios.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>Selagem</h4>
-                <p>Tratamento que proporciona cabelos selados, alinhados e sem frizz.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>Hidratação</h4>
-                <p>Devolva a vitalidade dos seus cabelos com nossos tratamentos de hidratação profunda.</p>
-            </div>
-        </div>
-        </section>
-        <section class="page3">
-            <div class="container text-center text-white">
-                <h2>Depoimentos de Clientes</h2>
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <p><strong>Maria S.</strong> "Adorei o atendimento! Meu cabelo ficou incrível."</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p><strong>Ana L.</strong> "Excelente serviço e ambiente super acolhedor!"</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p><strong>João P.</strong> "Me senti muito bem tratado e o corte foi perfeito!"</p>
-                    </div>
+           
+            <div class="interface">
+
+                <div class="txt-quem-somos">
+
+                    <h1> Conheça o nosso  <span> Salão </span></h1>
+                    <p>Oferecemos um espaço acolhedor e serviços personalizados para realçar sua beleza. Com profissionais experientes, estamos prontos para transformar seu visual e proporcionar uma experiência única. 
+                        <span>Venha descobrir um novo conceito em cuidados com a sua beleza!</span></p>
+                    <a href="#">
+                        <button>Agendar</Button>
+                    </a>
                 </div>
+
             </div>
         </section>
-        <section class="page4">
-            <h2>Entre em Contato</h2>
-            <p>Siga-nos nas redes sociais ou envie-nos uma mensagem via WhatsApp!</p>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><img src="static/img/facebook.png" alt="Facebook" width="40"></a>
-                <a href="https://instagram.com" target="_blank"><img src="static/img/instagram.png" alt="Instagram" width="40"></a>
-                <a href="https://wa.me/123456789" target="_blank"><img src="static/img/whatsapp.png" alt="WhatsApp" width="40"></a>
-            </div>
-            <a href="agendamento.html" class="btn btn-primary mt-4">Agende seu horário</a>
-        </section>
-    </div>
   </body>
 </html>

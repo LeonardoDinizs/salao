@@ -1,30 +1,117 @@
-.quem-somos{
-    background-color: #f64740;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-.page2{
-    background-color: #3772ff;
-}
-.page3{
-    background-color: #fdca40;
-}
-.page4{
-    background-color: #00ffae;
-}
+
+/*body{
+    background-color: black;
+}*/
 
 .interface{
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-section{
-    height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    position: sticky;
+header .btn-contato button, .quem-somos button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* Estilo header */
+header{
+    width: 100%;
+    padding: 40px;
+    position: fixed;
     top: 0;
     left: 0;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+}
+
+header .logo img{
+    max-width: 40px;
+}
+
+header .menu-desktop nav ul{
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a{
     color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.05);
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+}
+
+header .btn-contato button:hover, .quem-somos button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilo do quem-somos */
+section.quem-somos{
+    height: 99vh;
+    background-image: url(../imagem/salao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;  
+}
+
+.quem-somos .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.quem-somos .txt-quem-somos h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 800;
+}
+
+.quem-somos .txt-quem-somos h1 span{
+    display: block;
+    font-weight: 200;
+}
+
+.quem-somos .txt-quem-somos p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.quem-somos .txt-quem-somos p span{
+    display: block;
+
+}
+
+.quem-somos button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
 }
