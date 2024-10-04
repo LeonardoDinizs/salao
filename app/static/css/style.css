@@ -144,3 +144,58 @@ section.serviços{
     font-weight: 300;
 }
 
+/* Estilo dos botões de contato */
+section.contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contato .icons-contato button i{
+    font-size: 25px;
+}
+
+.contato .icons-contato button:hover{
+    background-color: #000;
+}
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
