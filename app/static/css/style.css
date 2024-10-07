@@ -43,7 +43,7 @@ header .interface{
 }
 
 header .logo img{
-    max-width: 40px;
+    max-width: 60px;
 }
 
 /* Estilo do menu dinâmico */
@@ -126,6 +126,12 @@ section.quem-somos{
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+.quem-somos .txt-quem-somos {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .quem-somos .txt-quem-somos h1{
