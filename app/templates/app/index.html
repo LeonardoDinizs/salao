@@ -5,8 +5,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/responsive.css' %}" media="screen">
 
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <!-- /Bootstrap icons-->
 
     <!-- Scripts de JS-->
-    <script src="{% static 'js/menu.js' %}" defer></script>
+    <script src="{% static 'app/js/menu.js' %}" defer></script>
     <!-- /Scripts de JS-->
 
     <title>Barbearia Studio W.</title>
@@ -32,8 +32,8 @@
             <div class="interface">
 
                 <section class="logo">
-                    <img class="logo-branca" src="static/imagens/logotipo.png" alt="Logotipo do Site">
-                    <img class="logo-preta" src="static/imagens/logotipo_p.png" alt="Logotipo do Site">
+                    <img class="logo-branca" src="static/app/imagens/logotipo.png" alt="Logotipo do Site">
+                    <img class="logo-preta" src="static/app/imagens/logotipo_p.png" alt="Logotipo do Site">
                 </section>
 
                 <section class="menu-desktop">
@@ -48,7 +48,7 @@
                 </section>
 
                 <section class="btn-contato">
-                    <a href="#">
+                    <a href="{% url 'agendamento.html' %}">
                         <button>Agendar</Button>
                     </a>
                 </section>
@@ -65,7 +65,7 @@
                     <h1> Conheça o nosso  <span> Salão </span></h1>
                     <p>Oferecemos um espaço acolhedor e serviços personalizados para realçar sua beleza, com profissionais experientes, estamos prontos para transformar seu visual e proporcionar uma experiência única. 
                         <span>Venha descobrir um novo conceito em cuidados com a sua beleza!</span></p>
-                    <a href="#">
+                        <a href="{% url 'agendamento.html' %}">
                         <button>Agendar</Button>
                     </a>
                 </div>
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="img-itens">
-                   <img src="static/imagens/corte.png"> 
+                   <img src="static/app/imagens/corte.png"> 
                 </div>
 
                </article>
@@ -93,7 +93,7 @@
                <article class="itens-container">
 
                 <div class="img-itens item-1">
-                    <img src="static/imagens/coloracao.png"> 
+                    <img src="static/app/imagens/coloracao.png"> 
                  </div>
 
                 <div class="txt-itens item-2">
@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="img-itens">
-                   <img src="static/imagens/progressiva.png"> 
+                   <img src="static/app/imagens/progressiva.png"> 
                 </div>
 
                </article>
@@ -121,7 +121,7 @@
                <article class="itens-container">
 
                 <div class="img-itens item-3">
-                    <img src="static/imagens/selagem.png"> 
+                    <img src="static/app/imagens/selagem.png"> 
                  </div>
 
                 <div class="txt-itens item-4">
@@ -141,7 +141,7 @@
                 </div>
 
                 <div class="img-itens">
-                   <img src="static/imagens/hidratacao.png"> 
+                   <img src="static/app/imagens/hidratacao.png"> 
                 </div>
 
                </article>
@@ -171,7 +171,7 @@
                 <a href="https://www.instagram.com/weslley.studiow/">
                     <button><i class="bi bi-instagram"></i><p>Instagram</p></Button>
                 </a>
-                <a href="#">
+                <a href="{% url 'agendamento.html' %}">
                     <button><i class="bi bi-ui-checks"></i><p>Agendar</p></Button>
                 </a>
 
