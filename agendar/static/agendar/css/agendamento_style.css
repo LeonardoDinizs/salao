@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(../imagens-agendar/form-agendar.jpg); /* Substitua pelo caminho da sua imagem */
+    background-image: url(../imagens-agendar/form-agendar.jpg); 
     background-size: cover; /* Cobre toda a área */
     background-position: center; /* Centraliza a imagem */
 }
@@ -14,13 +14,14 @@ body {
 .navbar {
     background-color: transparent !important; /* Torna a navbar transparente */
     display: flex; /* Ativa Flexbox */
-    justify-content: center; /* Centraliza o conteúdo da navbar */
+    justify-content: center !important; /* Centraliza o conteúdo da navbar */
+    align-items: center !important;
 }
 
 .navbar-brand {
     padding: 10px 20px; /* Espaçamento do botão */
     background: linear-gradient(to right, #FFA500, #FF4500); /* Gradiente laranja */
-    color: white; /* Cor do texto */
+    color: white !important;; /* Cor do texto */
     border: none; /* Remove borda padrão */
     border-radius: 5px; /* Arredonda os cantos do botão */
     transition: background 0.3s; /* Transição suave */
