@@ -1,10 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-nav{
-    background-color: aqua;
+body {
+    background-image: url(../imagens-agendar/form-agendar.jpg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.navbar {
+    background-color: transparent !important; /* Torna a navbar transparente */
+    display: flex; /* Ativa Flexbox */
+    justify-content: center; /* Centraliza o conteúdo da navbar */
+}
+
+.navbar-brand {
+    padding: 10px 20px; /* Espaçamento do botão */
+    background: linear-gradient(to right, #FFA500, #FF4500); /* Gradiente laranja */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    transition: background 0.3s; /* Transição suave */
+}
+
+/* Estilo ao passar o mouse */
+.navbar-brand:hover {
+    background: linear-gradient(to right, #FF4500, #FFA500); /* Inverte o gradiente no hover */
+}
+
+p {
+    margin-top: 30px; /* Ajuste o valor conforme necessário */
+}
+
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    color: white; /* Cor do texto dentro do formulário */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+.btn-agendamento {
+    padding: 10px 20px; /* Espaçamento do botão */
+    background: linear-gradient(to right, #FFA500, #FF4500); /* Gradiente laranja */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    transition: background 0.3s; /* Transição suave */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+/* Estilo ao passar o mouse */
+.btn-agendamento:hover {
+    background: linear-gradient(to right, #FF4500, #FFA500); /* Inverte o gradiente no hover */
 }
