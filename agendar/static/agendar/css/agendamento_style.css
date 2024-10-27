@@ -19,7 +19,8 @@ body {
 }
 
 .navbar-brand {
-    padding: 10px 20px; /* Espaçamento do botão */
+    padding: 10px 30px; /* Espaçamento do botão */
+    margin-top: 20px;
     background: linear-gradient(to right, #FFA500, #FF4500); /* Gradiente laranja */
     color: white !important;; /* Cor do texto */
     border: none; /* Remove borda padrão */
