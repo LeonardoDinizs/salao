@@ -22,7 +22,7 @@ body {
     padding: 10px 30px; /* Espaçamento do botão */
     margin-top: 20px;
     background: linear-gradient(to right, #FFA500, #FF4500); /* Gradiente laranja */
-    color: white !important;; /* Cor do texto */
+    color: white !important; /* Cor do texto */
     border: none; /* Remove borda padrão */
     border-radius: 5px; /* Arredonda os cantos do botão */
     transition: background 0.3s; /* Transição suave */
@@ -34,7 +34,8 @@ body {
 }
 
 p {
-    margin-top: 30px; /* Ajuste o valor conforme necessário */
+    margin-top: 30px !important; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0% !important;
 }
 
 .container {
