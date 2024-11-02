@@ -59,6 +59,42 @@
 
 /* /Responsivo Serviços */
 
+/* Responsivo localização */
+.localizacao {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+}
+
+.txt-localizacao {
+    order: 0;
+}
+
+.mapBox {
+    order: 1;
+}
+
+.txt-localizacao, .mapBox {
+    display: block;
+    width: 100%;
+}
+
+.localizacao .txt-localizacao h3 {
+    font-size: 2em;
+    line-height: 40px;
+}
+
+.localizacao .txt-localizacao p {
+    margin-bottom: 20px;
+}
+
+/* Adicionando um pouco de espaçamento entre os elementos */
+.txt-localizacao {
+    margin-bottom: 20px; /* Espaço entre o texto e o mapa */
+}
+
+
+/* /Responsivo localização */
+
 /* Responsivo Contatos */
 
 .txt-contato, .icons-contato{
