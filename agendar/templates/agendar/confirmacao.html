@@ -1,0 +1,37 @@
+{% load static %}
+
+<!-- confirmacao.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Agendamento</title>
+    <link rel="stylesheet" href="{% static 'agendar/css/confirmacao_style.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Agendamento Enviado com Sucesso!</h1>
+        <p class="text-center">Obrigado, {{ agendamento.nome }}! Seu agendamento foi enviado com sucesso. Aguarde nosso retorno via WhatsApp. 
+            <span>Agradecemos pela sua confiança!</span></p>
+        
+        <h3>Detalhes do Agendamento:</h3>
+        <ul>
+            <li><strong>Nome:</strong> {{ agendamento.nome }}</li>
+            <li><strong>Celular:</strong> {{ agendamento.celular }}</li>
+            <li><strong>Email:</strong> {{ agendamento.email }}</li>
+            <li><strong>Serviços:</strong> {{ agendamento.servicos }}</li>
+            <li><strong>Data Desejada:</strong> {{ agendamento.data_desejada }}</li>
+            <li><strong>Horário Desejado:</strong> {{ agendamento.horario_desejado }}</li>
+            <li><strong>Mensagem:</strong> {{ agendamento.mensagem }}</li>
+        </ul>
+
+        <div class="text-center">
+            <a href="{% url 'agendamento.html' %}" class="btn btn-primary">Novo Agendamento</a>
+        </div>
+    </div>
+
+</body>
+</html>
